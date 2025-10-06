@@ -12,10 +12,14 @@ O formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/)
 ### Modificado
 - Sem modificações
 
-## [1.1.0] - DATA
+## [1.1.0] - 2025-10-06
 
 ### Adicionado
+- Adicionada a interface `Notificador` para implementar o padrão Observer.
 
 ### Corrigido
+- Sem correções
 
 ### Modificado
+- Refatorado o `NotificacaoService` para utilizar o padrão de projeto Observer.
+- As classes `EmailService`, `SmsService` e `PushService` agora implementam a interface `Notificador`.
